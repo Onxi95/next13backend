@@ -11,9 +11,10 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.13.2",
-    "@strapi/plugin-users-permissions": "4.13.2",
+    "@strapi/plugin-graphql": "4.13.2",
     "@strapi/plugin-i18n": "4.13.2",
+    "@strapi/plugin-users-permissions": "4.13.2",
+    "@strapi/strapi": "4.13.2",
     "pg": "8.8.0"
   },
   "author": {
@@ -23,8 +24,7 @@
     "uuid": "0aac0c1c-5478-481b-8ef4-acb6cf488c1a"
   },
   "engines": {
-    "node": ">=16.0.0 <=20.x.x",
-    "npm": ">=6.0.0"
+    "node": ">=16.0.0 <=20.x.x"
   },
   "license": "MIT"
 }

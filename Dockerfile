@@ -5,14 +5,14 @@ ARG NODE_ENV=development
 ENV NODE_ENV=${NODE_ENV}
 
 WORKDIR /opt/
-COPY package.json package-lock.json ./
-RUN npm config set fetch-retry-maxtimeout 600000 -g && npm install
+COPY package.json yarn.lock ./
 ENV PATH /opt/node_modules/.bin:$PATH
 
 WORKDIR /opt/app
 COPY . .
 RUN chown -R node:node /opt/app
 USER node
-RUN ["npm", "run", "build"]
+RUN ["yarn", "install"]
+RUN ["yarn", "build"]
 EXPOSE 1337
-CMD ["npm", "run", "develop"]
+CMD ["yarn", "develop"]
