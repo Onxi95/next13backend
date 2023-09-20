@@ -7,9 +7,13 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "codegen": "graphql-codegen --config codegen.ts"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@graphql-codegen/cli": "5.0.0",
+    "@graphql-codegen/client-preset": "4.1.0"
+  },
   "dependencies": {
     "@strapi/plugin-graphql": "4.13.2",
     "@strapi/plugin-i18n": "4.13.2",
