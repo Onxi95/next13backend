@@ -1,0 +1,29 @@
+query ProductsGetList {
+  products(pagination: { page: 1, pageSize: 10 }) {
+    data {
+      id
+      attributes {
+        name
+        description
+        categories {
+          data {
+            attributes {
+              name
+            }
+          }
+        }
+        images {
+          data {
+            attributes {
+              name
+              caption
+              width
+              height
+              formats
+            }
+          }
+        }
+      }
+    }
+  }
+}
