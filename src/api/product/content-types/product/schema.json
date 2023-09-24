@@ -51,7 +51,7 @@
       "mappedBy": "product"
     },
     "rating": {
-      "type": "integer",
+      "type": "float",
       "default": 1,
       "required": true,
       "max": 5,
