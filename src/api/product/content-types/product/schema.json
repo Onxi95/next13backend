@@ -56,6 +56,12 @@
       "required": true,
       "max": 5,
       "min": 1
+    },
+    "reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::review.review",
+      "mappedBy": "product"
     }
   }
 }
