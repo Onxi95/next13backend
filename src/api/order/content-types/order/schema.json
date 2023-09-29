@@ -24,7 +24,8 @@
         "payment_failed",
         "payment_processed",
         "payment_processing",
-        "ordered"
+        "ordered",
+        "draft"
       ],
       "required": true,
       "default": "ordered"
