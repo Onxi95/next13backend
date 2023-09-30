@@ -34,6 +34,10 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::order-item.order-item"
+    },
+    "userId": {
+      "type": "string",
+      "unique": true
     }
   }
 }
